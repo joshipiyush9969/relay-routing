@@ -35,11 +35,12 @@ function App() {
         .then(
           (result) => {
             console.log(result.text);
+            setError(error.text);
             setShow(true);
           },
           (error) => {
             console.log(error.text);
-            setError(true);
+            setError(error.text);
             setShow(true);
           }
         );
@@ -170,6 +171,23 @@ function App() {
           onClick={() => handleHelp("eg")}
           variant="outlined"
           label="Example"
+          style={{
+            marginInline: 10,
+            borderColor: "pink",
+            padding: 10,
+
+            color: "pink",
+          }}
+        />
+        <Chip
+          onClick={() =>
+            window.open(
+              "https://www.ijnrd.org/papers/IJNRD2304236.pdf",
+              "_blank"
+            )
+          }
+          variant="outlined"
+          label="Research Paper"
           style={{
             marginInline: 10,
             borderColor: "pink",
