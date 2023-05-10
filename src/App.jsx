@@ -199,7 +199,7 @@ function App() {
       </div>
       <footer>
         <a
-          href="https://github.com/joshipiyush9969"
+          href="https://joshipiyush9969.github.io/"
           target="_blank"
           rel="noreferrer"
         >
